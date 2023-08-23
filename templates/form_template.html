@@ -1,0 +1,106 @@
+{% extends 'bootstrap/base.html' %}
+{% block content %}
+{% include "header.html" %}
+<link rel="stylesheet" href="{{ url_for('static', filename='css/custom.css') }}">
+
+<header class="masthead" style="background-image: url('{{ url_for('static', filename='img/' ~ question['category'] ~ '.jpg') }}')">
+  <div class="overlay"></div>
+  <div class="container">
+      <div class="row">
+          <div class="col-lg-8 col-md-10 mx-auto">
+              <div class="page-heading">
+                  <span class="subheading">All about your {{ question['category'] }}</span>
+              </div>
+          </div>
+      </div>
+  </div>
+</header>
+
+<div class="container-fluid d-flex justify-content-center">
+  <div class="question-container">
+    <form action="{{ url_for('form_page') }}" method="POST" class="mt-4 custom-form">
+      
+      <label>{{ question['label'] }}:</label>
+
+      <!-- Keeping track of the questions -->
+      <input type="hidden" name="current_index" value="{{ index }}">
+
+      <!-- Error if the user does not answer the question -->
+      {% with messages = get_flashed_messages() %}
+        {% if messages %}
+          {% for message in messages %}
+          <p class="error-message error">{{ message }}</p>
+          {% endfor %}
+        {% endif %}
+      {% endwith %} 
+
+      <p class="question">{{ question['text'] }}</p>
+      <p class="note">{{ question['note'] }}</p>
+
+      <!-- Showing pictures for some of the questions -->
+      {% if question['image_female'] or question['image_male'] %}
+          <p>Gender Answer: {{ gender }}</p>
+
+          {% if gender == 'Male' %}
+              <div class="question-image">
+                  <img src="{{ url_for('static', filename='img/male.jpg') }}">
+              </div>
+          {% elif gender == 'Female' %}
+              <div class="question-image">
+                  <img src="{{ url_for('static', filename='img/female.jpg') }}">
+              </div>
+          {% endif %}
+      {% endif %}
+
+      {% if question['image'] %}
+            <div class="question-image">
+                <img src="{{ url_for('static', filename='img/' + question['image']) }}">
+            </div>
+      {% endif %}
+
+
+      <!-- Selecting the type of question (radio , choice, checkbox) -->
+      {% if question['type'] == 'radio' %}
+        {% for option in question['options'] %}
+          <input type="radio" name="{{ question['identifier'] }}" value="{{ option['value'] }}" data-required="{{ question['identifier'] }}">
+          <label for="{{ option['value'] }}">{{ option['label'] }}</label><br>
+        {% endfor %}
+
+      {% elif question['type'] == 'select_choice' %}
+        <select id="{{ question['identifier'] }}" name="{{ question['identifier'] }}" data-required="{{ question['identifier'] }}">
+          {% for option in question['options'] %}
+            <option value="{{ option['value'] }}">{{ option['label'] }}</option>
+          {% endfor %}
+        </select>
+
+      {% elif question['type'] == 'checkbox' %}
+        <div class="checkbox-grid">
+          {% for option in question['options'] %}
+            <div class="checkbox-column">
+              <input type="checkbox" name="{{ question['identifier'] }}" value="{{ option['value'] }}" data-required="{{ question['identifier'] }}">
+              <label class="checkbox-label" for="{{ option['value'] }}">{{ option['label'] }}</label><br>
+            </div>
+          {% endfor %}
+        </div>
+        
+      {% else %}
+        <input type="{{ question['type'] }}" name="{{ question['identifier'] }}" value="{{ question['value'] }}" data-required="{{ question['identifier'] }}">
+      {% endif %}
+
+      {% if question['comment'] %}
+      <div class="comment-section">
+        <label>{{ question['comment'] }}</label>
+        <br> <!-- Add a line break to separate the label and textarea -->
+        <textarea name="{{ question['comment'] }}" rows="1" cols="20"></textarea>
+      </div>
+      {% endif %}
+
+      <div class="button-container">
+        <button type="submit" class="mt-4 btn btn-primary" id="submit-button">Next</button>
+      </div>
+    </form>
+  </div>
+</div>
+
+{% include "footer.html" %}
+{% endblock %}

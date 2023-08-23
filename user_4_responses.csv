@@ -1,0 +1,93 @@
+user_id,category,question_id,answer,score,weight,comment
+4,sleep,1,Yes,5,3.0,
+4,sleep,2,22:00,5,1.0,N/A
+4,sleep,3,07:00,5,0.8,N/A
+4,sleep,4,No,5,1.0,
+4,sleep,5,22:00,5,0.5,N/A
+4,sleep,6,07:00,5,0.5,N/A
+4,sleep,8,No,5,0.8,
+4,sleep,9,No,5,0.8,
+4,sleep,10,No,5,0.8,
+4,sleep,11,Great,5,1.0,
+4,meal schedule,12,No,1,2.0,
+4,meal scedule,13,N/A,0,0.0,
+4,meal scedule,14,N/A,0,0.0,
+4,meal scedule,15,N/A,0,0.0,
+4,meal scedule,16,N/A,0,0.0,
+4,meal scedule,17,N/A,0,0.0,
+4,caffeine consumption,19,No,5,1.0,
+4,neuromodulation,20,N/A,0,0.0,
+4,neuromodulation,21,N/A,0,0.0,
+4,neuromodulation,22,N/A,0,0.0,
+4,bright light viewing,24,No,1,0.8,
+4,bright light viewing,25,More than 60 minutes,5,0.8,
+4,bright light viewing,26,More than 60 minutes,1,1.0,
+4,alcohol consumption,27,No,5,1.0,
+4,alcohol consumption,28,N/A,0,0.0,
+4,alcohol consumption,29,N/A,0,0.0,
+4,energy levels,31,Almost Every Day,1,1.0,
+4,energy levels,32,Not At All,1,1.0,
+4,energy levels,33,Almost Every Day,1,1.0,
+4,energy levels,34,Almost Every Day,1,1.0,
+4,energy levels,35,Almost Every Day,1,1.0,
+4,energy levels,36,Almost Every Day,1,1.0,
+4,energy levels,37,Almost Every Day,1,1.0,
+4,energy levels,38,Almost Every Day,1,1.0,
+4,energy levels,39,I feel tired almost every day,1,1.0,
+4,physical activity,40,Less than 8000,1,1.0,
+4,physical activity,41,No,1,1.0,
+4,physical activity,42,N/A,0,0.0,
+4,physical activity,43,N/A,0,0.0,
+4,physical activity,44,N/A,0,0.0,
+4,physical activity,45,N/A,0,0.0,
+4,physical activity,46,N/A,0,0.0,
+4,physical activity,47,N/A,0,0.0,
+4,physical activity,49,Almost Every Day,1,0.8,
+4,physical activity,50,More than 8 hours,1,1.0,
+4,physical activity,51,More than 12 hours,5,1.0,
+4,body composition,52,Female,0,0.0,N/A
+4,body composition,53,26,0,0.0,N/A
+4,body composition,54,64,5,1.0,N/A
+4,body composition,55,180,1,2.0,N/A
+4,body composition,56,81,1,2.0,N/A
+4,body composition,57,61,0,0.0,N/A
+4,body composition,58,1,5,1.0,
+4,digestion,59,Almost Every Day,1,2.0,
+4,digestion,60,Less frequently than every second day,1,1.0,
+4,digestion,61,Type 2,3,1.0,
+4,digestion,62,No,5,0.5,
+4,digestion,63,No,5,0.5,
+4,digestion,64,I experience pain and discomfort in my gut daily and it really impairs my quality of life.,1,2.0,
+4,digestion,65,I am very sensitive to many foods and I can eat only limited types of food.,1,2.0,
+4,nutrition quality,66,No,1,1.0,
+4,nutrition quality,67,No,5,1.0,
+4,nutrition quality,68,,1,1.0,N/A
+4,nutrition quality,69,No,1,1.0,
+4,nutrition quality,70,,5,1.0,N/A
+4,nutrition quality,71,,1,1.0,N/A
+4,nutrition quality,72,No,1,1.0,
+4,nutrition quality,73,3,5,0.8,
+4,nutrition quality,74,No,5,1.0,
+4,stress level,75,Multiple times a day,1,1.0,
+4,stress level,76,Multiple times a day,1,1.0,
+4,stress level,77,Multiple times a day,1,1.0,
+4,stress level,78,Once a day,2,1.0,
+4,stress level,79,4,4,1.0,
+4,stress level,80,5,5,1.0,very cool
+4,stress management,81,Less than once a week,1,1.0,
+4,stress management,82,Multiple times a day,5,1.0,i love nature
+4,stress management,83,Multiple times a day,5,1.0,
+4,stress management,84,Almost never,1,1.0,
+4,stress management,85,Almost never,1,1.0,
+4,stress management,86,No they don't,1,1.0,
+4,stress management,87,No,5,1.0,
+4,stress management,88,No,5,1.0,
+4,medical history,89,Yes,1,2.0,"i have ""too cool"" syndrome"
+4,medical history,90,No,5,1.0,
+4,medical history,91,Multiple times a week,1,1.0,
+4,medical history,92,Yes,1,1.0,
+4,medical history,93,No,5,2.0,
+4,medical history,94,Yes,1,1.0,
+4,medical history,95,No,5,1.0,
+4,medical history,96,No,5,1.0,
+4,medical history,97,Once a month or more often,1,1.0,

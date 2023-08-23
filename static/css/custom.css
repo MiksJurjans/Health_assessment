@@ -1,0 +1,228 @@
+/* custom.css */
+/* Custom styles for the question text */
+.question {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 2px;
+    text-align: left;
+    
+}
+
+/* Custom styles for the notes */
+.note {
+    font-size: 14px;
+    font-style: italic;
+    color: #666;
+    margin-bottom: 5px;
+    margin-top: 2px;
+    text-align: left;
+
+}
+
+/* Custom styles to reduce space between question and note */
+fieldset {
+    margin-bottom: 20px; /* Adjust the value to set the desired space */
+}
+
+.form-group {
+    text-align: left;
+    width: 100%; /* Adjust the width as needed */
+}
+
+.custom-form {
+  max-width: 1000px; /* Adjust this value to your desired width */
+  margin: 0 auto; /* Center the form horizontally */
+}
+
+/* custom.css */
+.custom-dropdown select {
+    /* Change the font size and color */
+    font-size: 16px;
+    color: #333;
+
+    /* Add some padding to the dropdown */
+    padding: 8px;
+
+    /* Customize the border and box-shadow */
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    box-shadow: 0 0 4px rgba(0, 0, 0, 0.1);
+
+    /* Customize the appearance of the dropdown arrow */
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    background-image: url('path/to/custom-arrow-icon.png');
+    background-repeat: no-repeat;
+    background-position: right center;
+    padding-right: 24px; /* Add padding for the arrow */
+
+    /* Add a custom background color and hover effect */
+    background-color: #f9f9f9;
+}
+
+.custom-dropdown select:hover {
+    background-color: #f1f1f1;
+}
+
+.question-image img {
+  max-width: 50%; /* Scale the image to fit the container width */
+  height: auto;    /* Maintain the image's aspect ratio */
+}
+
+
+header.masthead {
+    height: 20vh; /* Adjust this value as needed */
+    /* ... other styles ... */
+ }
+ 
+
+ header.masthead {
+    margin-bottom: 50px;
+    background: no-repeat center center;
+    background-color: #868e96;
+    background-attachment: scroll;
+    position: relative;
+    background-size: cover;
+  }
+  
+  header.masthead .overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background-color: #212529;
+    opacity: 0.5;
+  }
+  
+  header.masthead .page-heading,
+  header.masthead .post-heading,
+  header.masthead .site-heading {
+    padding: 114px 0; /* Adjusting the header size */
+    color: white;
+  }
+  
+  @media only screen and (min-width: 768px) {
+    header.masthead .page-heading,
+    header.masthead .post-heading,
+    header.masthead .site-heading {
+      padding: 114px 0;
+    }
+  }
+  
+  header.masthead .page-heading,
+  header.masthead .site-heading {
+    text-align: center;
+  }
+  
+  header.masthead .page-heading h1,
+  header.masthead .site-heading h1 {
+    font-size: 36px;
+    margin-top: 0;
+  }
+  
+  header.masthead .page-heading .subheading,
+  header.masthead .site-heading .subheading {
+    font-size: 36px;
+    font-weight: 300;
+    line-height: 1.1;
+    display: block;
+    margin: 5px 0 0;
+    font-family: 'Open Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  }
+  
+  @media only screen and (min-width: 768px) {
+    header.masthead .page-heading h1,
+    header.masthead .site-heading h1 {
+      font-size: 80px;
+    }
+  }
+  
+  header.masthead .post-heading h1 {
+    font-size: 35px;
+  }
+  
+  header.masthead .post-heading .meta,
+  header.masthead .post-heading .subheading {
+    line-height: 1.1;
+    display: block;
+  }
+  
+  header.masthead .post-heading .subheading {
+    font-size: 24px;
+    font-weight: 600;
+    margin: 10px 0 30px;
+    font-family: 'Open Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  }
+  
+  header.masthead .post-heading .meta {
+    font-size: 20px;
+    font-weight: 300;
+    font-style: italic;
+    font-family: 'Lora', 'Times New Roman', serif;
+  }
+  
+  header.masthead .post-heading .meta a {
+    color: #fff;
+  }
+  
+  @media only screen and (min-width: 768px) {
+    header.masthead .post-heading h1 {
+      font-size: 55px;
+    }
+    header.masthead .post-heading .subheading {
+      font-size: 30px;
+    }
+  }
+
+    @media only screen and (min-width: 768px) {
+    header.masthead .page-heading, header.masthead .post-heading, header.masthead .site-heading {
+        padding: 114px 0;
+    }
+    }
+
+    .question-container {
+      width: 80%; /* Adjust the width as needed */
+      padding: 20px; /* Add padding for spacing around the questions */
+      background-color: #ffffff; /* Set a background color for the container */
+      border: 1px solid #cccccc; /* Add a border for the container */
+      box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1); /* Add a shadow for a visual effect */
+      margin-top: 20px; /* Add margin from the top to create spacing */
+    }
+
+    .button-container {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      margin-top: 20px;
+    }
+    
+    .checkbox-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+      gap: 20px;
+    }
+    
+    .checkbox-column {
+      display: flex;
+      flex-direction: row; /* Change to column layout to align items vertically */
+      align-items: center; /* Center-align items horizontally */
+    }
+    
+    /* Adjust the checkbox height and width */
+    input[type="checkbox"] {
+      height: 20px; /* Adjust the height value as needed */
+      width: 20px; /* Adjust the width value to maintain aspect ratio */
+    }
+    
+    .checkbox-label {
+      margin-top: 8px; /* Add margin to adjust vertical position of the label */
+      margin-left: 8px; /* Add margin to adjust horizontal position of the label */
+    }
+
+    .error {
+      color: red;
+      font-weight: bold;
+    }
+    
